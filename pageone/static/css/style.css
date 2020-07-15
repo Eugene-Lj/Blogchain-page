@@ -1,0 +1,84 @@
+@charset "UTF-8";
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 31px;
+}
+
+h2 {
+    color: #de4a18;
+    font-size: 24;
+}
+
+.logo {
+    margin-right: 80px;
+    width: 200px;
+}
+
+h4 {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 24;
+}
+
+ul,
+li,
+ol,
+p {
+    color: #858585;
+    font-family: Rubik;
+    font-size: 16px;
+}
+
+body {
+    background-color: #000000;
+    /* Цвет фона веб-страницы */
+    font-family: Montserrat;
+    margin-right: 27px;
+    margin-left: 27px;
+}
+
+hr {
+    border: none;
+    /* Убираем границу */
+    background-color: #de4a18;
+    /* Цвет линии */
+    color: #de4a18;
+    /* Цвет линии для IE6-7 */
+    height: 2px;
+    /* Толщина линии */
+}
+
+footer {
+    color: #858585;
+}
+
+ol {
+    list-style: none;
+}
+
+ol li:before {
+    content: "-";
+    position: relative;
+    left: -28px;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.hg {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 49px;
+}
+
+
+/*background-color: #dc2e0b;*/
