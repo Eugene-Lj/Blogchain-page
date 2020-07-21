@@ -28,15 +28,15 @@ h4 {
 }
 
 img {
-    width: 200px;
     float: left;
-    align-items: center;
+    align-items: bottom;
 }
 
 ul,
 li,
 ol,
-p {
+h6,
+td {
     color: #858585;
     font-family: Rubik;
     font-size: 16px;
@@ -65,10 +65,6 @@ hr {
     /* Цвет линии для IE6-7 */
     height: 2px;
     /* Толщина линии */
-}
-
-footer {
-    color: #858585;
 }
 
 ol {
@@ -100,5 +96,33 @@ ol li:before {
     margin-left: 280px;
 }
 
+th,
+.colorwhite,
+p {
+    color: #fff;
+}
 
-/*background-color: #dc2e0b;*/
+table {
+    border: 1px solid #000;
+    /* Цвет рамки таблицы */
+    width: 100%;
+    /* Ширина таблицы */
+    table-layout: fixed;
+    /* Фиксированная ширина ячеек */
+    border-collapse: collapse;
+    /* Убираем двойные линии между ячейками */
+}
+
+td,
+th {
+    padding: 3px;
+    /* Поля вокруг содержимого таблицы */
+    border: 1px solid #762b1c;
+    /* Параметры рамки */
+    text-align: center;
+    /* Выравнивание по центру */
+}
+
+footer {
+    color: #858585;
+}
