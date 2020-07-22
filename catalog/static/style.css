@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.header {
+    margin-bottom: 10px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 31px;
+}
+
+.logo {
+    margin-right: 80px;
+    width: 200px;
+}
+
+img {
+    float: left;
+    align-items: bottom;
+}
+
+body {
+    background-color: #000000;
+    /* Цвет фона веб-страницы */
+    font-family: Montserrat;
+    margin-right: 27px;
+    margin-left: 27px;
+}
+
+hr {
+    border: none;
+    /* Убираем границу */
+    background-color: #de4a18;
+    /* Цвет линии */
+    color: #de4a18;
+    /* Цвет линии для IE6-7 */
+    height: 2px;
+    /* Толщина линии */
+}
+
+h2 {
+    color: #de4a18;
+    font-size: 24;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.hg {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+table {
+    border: 1px solid #000;
+    /* Цвет рамки таблицы */
+    width: 100%;
+    /* Ширина таблицы */
+    table-layout: fixed;
+    /* Фиксированная ширина ячеек */
+    border-collapse: collapse;
+    /* Убираем двойные линии между ячейками */
+}
+
+td,
+th {
+    padding: 3px;
+    /* Поля вокруг содержимого таблицы */
+    border: 1px solid #762b1c;
+    /* Параметры рамки */
+    text-align: center;
+    /* Выравнивание по центру */
+}
+
+footer {
+    color: #858585;
+}
