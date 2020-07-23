@@ -46,7 +46,7 @@ h2 {
 }
 
 .container {
-    width: 1400px;
+    width: 1040px;
     margin: 0 auto;
 }
 
@@ -79,6 +79,16 @@ th {
     /* Параметры рамки */
     text-align: center;
     /* Выравнивание по центру */
+}
+
+th {
+    color: #fff;
+}
+
+td {
+    color: #858585;
+    font-family: Rubik;
+    font-size: 16px;
 }
 
 footer {

@@ -7,51 +7,54 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>ctris catalog</title>
-    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="static/css/style.css" rel="stylesheet" />
+    <link href="/static/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <header id="header" class="header">
         <div class="container">
             <div class="nav">
-                <img class="logo" src="static/images/logo.png" alt="Logo" />
+                <a href="http://127.0.0.1:8000/"><img class="logo" src="/static/images/logo.png" alt="Logo" /></a>
                 <div class="hq">
                     <h1>ТОО "ЦЕНТР‌ ТЕХНОЛОГИЧЕСКОГО‌ РАЗВИТИЯ‌ ИНТЕЛЛЕКТУАЛЬНЫХ‌ СИСТЕМ"</h1>
                 </div>
             </div>
+            <hr>
         </div>
     </header>
-    <hr>
-    <div class="content">
-        <h2></h2>
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-        </table>
-    </div>
-    </div>
-    <hr>
+    <section id="block" class="block">
+        <div class="container">
+            <div class="content">
+                <h2>Список закупок:</h2>
+                <table>
+                    <tr>
+                        <th>Дата начала</th>
+                        <th>Дата окончания</th>
+                        <th>Наименование</th>
+                        <th>Описание</th>
+                        <th>Скачать файл</th>
+                    </tr>
+                    {% for procuremetn in object_list %}
+                    <tr>
+                        <td>{{procuremetn.start_date}}</td>
+                        <td>{{procuremetn.end_date}}</td>
+                        <td>{{procuremetn.title}}</td>
+                        <td>{{procuremetn.description}}</td>
+                        <td><a href="{{procurement.file.url}}">Files</a></td>
+                    </tr>
+                    {% endfor%}
+                </table>
+                <hr>
+            </div>
+        </div>
     </section>
-    <hr>
+
     <footer class="footer py-4 ">
         <div class="container ">
             <div class="row align-items-center ">

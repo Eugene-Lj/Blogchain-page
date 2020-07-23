@@ -78,7 +78,7 @@ ol li:before {
 }
 
 .container {
-    width: 1400px;
+    width: 1040px;
     margin: 0 auto;
 }
 
@@ -103,7 +103,7 @@ p {
 }
 
 table {
-    border: 1px solid #000;
+    border: 2px solid #000;
     /* Цвет рамки таблицы */
     width: 100%;
     /* Ширина таблицы */
@@ -119,7 +119,7 @@ th {
     /* Поля вокруг содержимого таблицы */
     border: 1px solid #762b1c;
     /* Параметры рамки */
-    text-align: center;
+    text-align: left;
     /* Выравнивание по центру */
 }
 
