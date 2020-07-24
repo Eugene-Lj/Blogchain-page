@@ -38,15 +38,15 @@
                         <th>Дата окончания</th>
                         <th>Наименование</th>
                         <th>Описание</th>
-                        <th>Скачать файл</th>
+                        <th>Скачать файлы</th>
                     </tr>
-                    {% for procuremetn in object_list %}
+                    {% for procuremetn in procurement_list %}
                     <tr>
                         <td>{{procuremetn.start_date}}</td>
                         <td>{{procuremetn.end_date}}</td>
                         <td>{{procuremetn.title}}</td>
                         <td>{{procuremetn.description}}</td>
-                        <td><a href="{{procurement.file.url}}">Files</a></td>
+                        <td>{% for info in procuremetn.file_set.all %}<a href="{{info.file.url}}" {% endfor %}>File</a></td>
                     </tr>
                     {% endfor%}
                 </table>

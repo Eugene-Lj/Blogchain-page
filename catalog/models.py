@@ -13,5 +13,5 @@ class Procurement(models.Model):
 
 class ProcurementFiles(models.Model):
     file = models.FileField(upload_to='uploads/', blank=True, null=True)
-    procurement = models.ForeignKey(Procurement, on_delete=models.CASCADE)
+    procurement = models.ForeignKey(Procurement, on_delete=models.CASCADE, related_name='file')
     
