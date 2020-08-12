@@ -46,7 +46,10 @@
                         <td>{{procuremetn.end_date}}</td>
                         <td>{{procuremetn.title}}</td>
                         <td>{{procuremetn.description}}</td>
-                        <td>{% for info in procuremetn.file_set.all %}<a href="{{info.file.url}}" {% endfor %}>File</a></td>
+                        <td>
+                            {% for file in files %}
+                            <a href="{{file.url}}" download="">File</a> {% endfor%}
+                        </td>
                     </tr>
                     {% endfor%}
                 </table>
